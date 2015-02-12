@@ -19,6 +19,15 @@
               <button class="btn btn-primary" ng-click="getSongData()"> Submit </button>
             </div>
           </form>
+          <label> Sort By
+            <select class="form-control" ng-change="updateSortInfo()">
+              <option value="Song">Song Name</option>
+              <option value="Artist">Artist Name</option>
+              <option value="Collection">Collection Type</option>
+              <option value="Type">Genre</option>
+            </select>
+            <input placeholder="Sort" class="form-control" ng-model="filterOptions.filterText">
+          </label>
         </div>
       </div>
     </div>
