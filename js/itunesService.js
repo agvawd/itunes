@@ -9,8 +9,7 @@ app.service('itunesService', function($http, $q){
     		url:'https://itunes.apple.com/search?term=' + artist + '&callback=JSON_CALLBACK'
     	}).then(function(response){
     		deferred.resolve(response.data.results);
-    		console.log(response)
-    	})
+    	});
 
     	return deferred.promise;
     }

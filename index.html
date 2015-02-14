@@ -20,7 +20,7 @@
             </div>
           </form>
           <label> Sort By
-            <select class="form-control" ng-change="updateSortInfo()">
+            <select class="form-control" ng-change="updateSortInfo()" ng-model="sortInfo">
               <option value="Song">Song Name</option>
               <option value="Artist">Artist Name</option>
               <option value="Collection">Collection Type</option>
